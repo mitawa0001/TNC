@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Home-Startup-Draft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./index.css">
+  <!-- <script type="text/javascript" src="./index.js"></script>   -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./img/correct.png" type="image/x-icon">
+</head>
+<body onload="load()">
+  <div class="navbar">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div class="sidenav">
+          <a class="dropdown-btn" onclick="clickf(1)">Dropdown
+            <i class="fa-light fa-angle-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p1">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a class="dropdown-btn" onclick="clickf(2)">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a class="dropdown-btn" onclick="clickf(3)">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p3">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a class="dropdown-btn" onclick="clickf(4)">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p4">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+
+        </div>
+        <div class="email-help">
+          <p>Email.hello@uxper.co</p>
+          <div class="d-flex social-icon">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex"> -->
+      <span id="mobile-manu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9870;</span>
+      <a class="navbar-brand mobile-logo" href="https://sala.uxper.co/"><img class="" src="./img/black.svg"></a>
+      <a class="navbar-brand desktop-hide" href="https://sala.uxper.co/"><img class="" src="./img/mobile-view.png"></a>
+    <!-- </div> -->
+    
+                <script>
+                  function clickf(value) {
+                
+                    $('.hided').addClass('hide')
+                    $('#p' + value).removeClass('hide')
+                  }
+                </script>
+                <script>
+                  function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                  }
+
+                  function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                  }
+                </script>
+   
+    <div class="alpha">
+      <div class="main-box-nav">
+        <div class="dropdown">
+          <button class="dropbtn"><span>Demos
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><span>pages
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><span>Portfolio
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><span>Blog
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><span>Shop
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="btn btn-success nav-button for-hide " type="submit">Let's Talk</button>
+    </div>
+  </div>
+  
+  <!-- <button class="theme-button" onclick="dark()">Toggle dark mode</button> -->
+
+  <script>
+  function dark(){
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
+
+
+<style>
+  
+</style>
+
+
+<div class="form-check form-switch theme-button" onclick= "dark()">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  <!-- <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label> -->
+</div>
+
+
+
+
+  <a target="_blank" class="purchase-theme btn" href="https://1.envato.market/kjZm1z">
+    <i class="icon element">
+      <img loading="lazy" src="https://colabrio.ams3.cdn.digitaloceanspaces.com/stockie/st__envato.svg"
+        alt="envato icon">
+    </i>Get Sala Now
+  </a>
+  <div class="box-1 container ">
+    <div class="col-12 col-sm-6">
+      <button type="button" class="btn btn-warning start-up">startup</button>
+      <div class="header-text-container ">The template your startup needed</div>
+      <p class="footer-text-container">Awesome product pages. Mobile friendly. Easy.</p>
+      <a href="https://sala.uxper.co/contact-01/" target="_blank"><button type="button"
+          class="send-msg  btn-primary relative-msg btn-1">Let's talk - Send a message</button></a>
+      <div class="text-container-circle"><img class="inner-circle" src="./img/cicle-s@2x.webp" alt="blue-circle"></div>
+    </div>
+    <div class="">
+      <img class="box-1-img" src="./img/artwork-4.webp">
+    </div>
+  </div>
+  <div class="container">
+    <div class="main-box w3-animate-bottom">
+      <div class="col-12 col-sm-4 listing-wrap">
+        <div class="col-2"><img src="./img/security.png"></div>
+        <div class="col-12 col-sm-9 ">
+          <div class="three-section-heading">24/7 Support</div>
+          <p class="listing-box-footer">Nunc molestie tellus sapien, quis laoreet orci.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 listing-wrap">
+        <div class="col-2 "><img src="./img/take-ownership.png"></div>
+        <div class="col-12 col-sm-9 ">
+          <div class="three-section-heading">Take Ownership</div>
+          <p class="listing-box-footer">
+            Nunc molestie tellus sapien, quis laoreet orci.
+          </p>
+        </div>
+      </div>
+      <div class=" col-12 col-sm-4 listing-wrap">
+        <div class="col-2"><img src="./img/team-work.png"></div>
+        <div class="col-12 col-sm-9 ">
+          <div class="three-section-heading">Team Work</div>
+          <p class="listing-box-footer">Nunc molestie tellus sapien, quis laoreet orci.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="box-3">
+    <div class="box-1 container container">
+      <div class="box-3-contant">
+        <div class="box-3-sub-header">Who We Are</div>
+        <div class="header-box-3">We specialize in UI/UX, web development, digital marketing.</div>
+        <p class="footer-text-container">It is a long established fact that a reader will be distracted by the readable
+          content</p>
+        <div class="box-3-footer-ul">
+          <div class="col-12 d-flex mt-4">
+            <div class="col-1"><img class="currect" src="./img/correct.png"></div>
+            <div class="col-11 box-3-footer-text">Vivamus ac elementum urna.</div>
+          </div>
+          <div class="col-12 d-flex mt-4">
+            <div class="col-1"><img class="currect" src="./img/correct.png"></div>
+            <div class="col-11 box-3-footer-text">Feugiat metus suscipiti.</div>
+          </div>
+        </div>
+
+        <a href="https://sala.uxper.co/contact-01/" target="_blank"><button type="button"
+            class="send-msg btn btn-primary mt-4 common-button">Get in touch</button></a>
+      </div>
+      <div class="w3-animate-right">
+        <img class="comman-box-img" src="./img/mega-creator-17@2x.webp">
+      </div>
+    </div>
+  </section>
+  <section class="main-box-4 container-fluid">
+    <div class="container inner-box-4">
+      <div class="box-3-contant col-6">
+        <div class="box-4-sub-header">COMPANY’S VISION</div>
+        <div class="header-box-4">The story behind how our company was founded</div>
+        <p class="footer-text-container-4">Lorem ipsum dolor sit amet consectetur adipiscing elit eque ipsum odio justo amet urna auctor. At congue vulputate augue praesent mauris eu posuere pretium tellus. Viverra volutpat a est quis egestas id risus cursus venenatis.</p>
+        <a href="https://sala.uxper.co/contact-01/" target="_blank"><button type="button"
+            class="read-more btn btn-primary">Read more story</button></a>
+      </div>
+      <div class="col-6 img-remover">
+        <img class="box-4-img" src="./img/women.webp">
+      </div>
+    </div>
+
+  </section>
+  <div class="shape-11">
+    <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
+        <path class="elementor-shape-fill" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+        <path class="elementor-shape-fill" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+        <path class="elementor-shape-fill" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <section class="box-3">
+    <div class="main-box-3  container">
+      <div class="w3-animate-left">
+        <img class="comman-box-img" src="./img/foto-yo-3-peq@2x (1).webp">
+      </div>
+      <div class="box-3-contant">
+        <div class="box-3-sub-header">INSIGHT</div>
+        <div class="header-box-3">Insight that drives hange</div>
+        <p class="footer-text-container">It is a long established fact that a reader will be distracted by the readable
+          content</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p class="fs-2 text-light"><span id='0103'>12</span><span class="value-sign">%</span></p>
+              <p class="align-content-center sector-type">Private Office</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p class="fs-2 text-light"><span id='0101'>0</span><span>M</span><span class="value-sign">+</span></p>
+              <p class="align-content-center sector-type">Coworking Desks </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <p class="fs-2 text-light"><span id='0102'>12</span><span>K</span><span class="value-sign">%</span></p>
+              <p class="align-content-center sector-type">Average complain rate</p>
+            </div>
+            <div class="col-6 col-sm-6">
+              <p class="fs-2 text-light"><Span id='0104'>0</Span><span class="value-sign">%</span></p>
+              <p class="align-content-center sector-type">Site visits</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://sala.uxper.co/contact-01/" target="_blank"><button type="button"
+            class="send-msg btn btn-primary common-button">See our services</button></a>
+      </div>
+
+    </div>
+  </section>
+  <script>
+    function animate(obj, initVal, lastVal, duration) {
+      let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime) => {
+
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+          startTime = currentTime;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+      };
+      //start animating
+      window.requestAnimationFrame(step);
+    }
+    let text1 = document.getElementById('0101');
+    let text2 = document.getElementById('0102');
+    let text3 = document.getElementById('0103');
+    let text4 = document.getElementById('0104');
+    const load = () => {
+      animate(text1, 0, 20, 3000);
+      animate(text2, 0, 100, 3000);
+      animate(text3, 0, 98, 3000);
+      animate(text4, 90, 55, 3000);
+    }
+  </script>
+
+  <div class="container">
+    <div class="row booking-box">
+      <div class="booking-content">
+        <h3>Subscribe to <mark class="news-footer"> Newsletter</mark></h3>
+        <h4>Uncover, analyze, track, and report on SEO data.</h4>
+        <section class="newsletter w3-animate-bottom">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content">
+                <div class="input-group">
+                  <input type="email" class="form-control your-email" placeholder="Your email address">
+                  <span class="input-group-btn">
+                    <button class="btn sub-now" type="submit">Subscribe</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="newsletter-footer w3-animate-bottom ">
+          <div class="d-flex col-sm-5 newsletter-footer-subheader">
+            <div class="col-1 col-sm-2"><img class="currect" src="./img/correct.png"></div>
+            <div class="col-10 col-sm-9 needed-things">No credit card required</div>
+          </div>
+          <div class="d-flex col-sm-5 newsletter-footer-subheader">
+            <div class="col-1 col-sm-2"><img class="currect" src="./img/correct.png"></div>
+            <div class="col-10 col-sm-9 needed-things">Cancel Anything</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 contact-box-main">
+        <img class="contact-img w3-animate-right" src="./img/mega-creator-4.svg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="text-center fs-6 service">service</p>
+    <p class="text-center fs-2 service-footer">Built for all company sizes</p>
+    <div class="service-box w3-animate-bottom">
+      <div class="service-main-box">
+        <div class="col-sm-6 service-single">
+          <div class="col-12 col-sm-2 service-single-img">
+            <img src="./img/rocket.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-12 col-sm-10">
+            <div class="card-body">
+              <h5 class="card-title">Qualitative Research</h5>
+              <p class="card-text">It is a long established fact that a reader will be distracted</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 service-single">
+          <div class="col-12 col-sm-2 service-single-img">
+            <img src="./img/pie-chart.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-12 col-sm-10">
+            <div class="card-body">
+              <h5 class="card-title">Social Marketing</h5>
+              <p class="card-text">It is a long established fact that a reader will be distracted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service-box w3-animate-bottom">
+      <div class="service-main-box">
+        <div class="col-sm-6 service-single">
+          <div class="col-12 col-sm-2 service-single-img">
+            <img src="./img/magnet.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-12 col-sm-10">
+            <div class="card-body">
+              <h5 class="card-title">Qualitative Research</h5>
+              <p class="card-text">It is a long established fact that a reader will be distracted</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 service-single">
+          <div class="col-12 col-sm-2 service-single-img">
+            <img src="./img/full-moon.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-12 col-sm-10">
+            <div class="card-body">
+              <h5 class="card-title">Social Marketing</h5>
+              <p class="card-text">It is a long established fact that a reader will be distracted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service-box w3-animate-bottom">
+      <div class="service-main-box">
+        <div class="col-sm-6 service-single">
+          <div class="col-12 col-sm-2 service-single-img">
+            <img src="./img/magnet.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-12 col-sm-10">
+            <div class="card-body">
+              <h5 class="card-title">Qualitative Research</h5>
+              <p class="card-text">It is a long established fact that a reader will be distracted</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 service-single">
+          <div class="col-12 col-sm-2 service-single-img">
+            <img src="./img/pie-chart.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-12 col-sm-10">
+            <div class="card-body">
+              <h5 class="card-title">Social Marketing</h5>
+              <p class="card-text">It is a long established fact that a reader will be distracted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="slider-box">
+    <div class="shape-12">
+      <div class="elementor-shape elementor-shape-top for-colour" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+          <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="text-center fs-6 service">TESTIMONIAL</p>
+      <p class="text-center fs-2 service-footer">People who already love us</p>
+      <!-- slider start -->
+      <div class="main-slider-box">
+        <div class="mySlides">
+          <div class="mySlides_container">
+            <div class="mySlides_wrapper">
+              <div class="col-12 thoughts">
+                A amazing WordPress theme designed specifically for a startup, apps, business, SaaS, and IT designed specifically for a startup, services.
+              </div>
+              <div class="col-12 profile-2">
+                <div class="col-2 user-img"><img src="./img/ava-1.png"></div>
+                <div class="col-8 profile-status">
+                  <div class="col-6 user-name">B Siva Rama Krishna Rao (Current employee)</div>
+                  <div class="col-6 user-details">Assistant Store Manager</div>
+                </div>
+                <div class="col-2 user-img"><img src="./img/lg-pn-1.png"></div>
+              </div>
+            </div>
+            <div class="mySlides_wrapper-1">
+              <div class="col-12 thoughts">
+                " I have buyed and tested more then 10 themes, and Sala its perfect for me, i think its the perfect theme !! Great support. Two thumbs up! </div>
+              <div class="col-12 profile-2">
+                <div class="col-2 user-img"><img src="./img/ava-1.png"></div>
+                <div class="col-8 profile-status">
+                  <div class="col-6 user-name">B Siva Rama Krishna Rao (Current employee)</div>
+                  <div class="col-6 user-details">Assistant Store Manager</div>
+                </div>
+                <div class="col-2 user-img"><img src="./img/lg-pn-1.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides">
+          <div class="mySlides_container">
+            <div class="mySlides_wrapper">
+              <div class="col-12 thoughts">
+                
+					" I have buyed and tested more then 10 themes, and Sala its perfect for me, i think its the perfect theme !! Great support. Two thumbs up!   
+              </div>
+              <div class="col-12 profile-2">
+                <div class="col-2 user-img"><img src="./img/ava-2.png"></div>
+                <div class="col-8 profile-status">
+                  <div class="col-6 user-name">B Siva Rama Krishna Rao (Current employee)</div>
+                  <div class="col-6 user-details">Assistant Store Manager</div>
+                </div>
+                <div class="col-2 user-img"><img src="./img/lg-pn-2.webp"></div>
+              </div>
+            </div>
+            <div class="mySlides_wrapper-1">
+              <div class="col-12 thoughts">
+                
+					" Awesome theme! Looks great. Works great. Highly customizable. Excellent support. What more can I say?
+          Couldn't be happier 
+              </div>
+              <div class="col-12 profile-2">
+                <div class="col-2 user-img"><img src="./img/ava-1.png"></div>
+                <div class="col-8 profile-status">
+                  <div class="col-6 user-name">B Siva Rama Krishna Rao (Current employee)</div>
+                  <div class="col-6 user-details">Assistant Store Manager</div>
+                </div>
+                <div class="col-2 user-img"><img src="./img/lg-pn-1.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides">
+          <div class="mySlides_container">
+            <div class="mySlides_wrapper">
+              <div class="col-12 thoughts">
+               
+					" Amazing support! Totally all over my issues and we were changing it completely from being a place directory!  Love this theme"				
+              </div>
+              <div class="col-12 profile-2">
+                <div class="col-2 user-img"><img src="./img/ava-1.png"></div>
+                <div class="col-8 profile-status">
+                  <div class="col-6 user-name">B Siva Rama Krishna Rao (Current employee)</div>
+                  <div class="col-6 user-details">Assistant Store Manager</div>
+                </div>
+                <div class="col-2 user-img"><img src="./img/lg-pn-1.png"></div>
+              </div>
+            </div>
+            <div class="mySlides_wrapper-1">
+              <div class="col-12 thoughts">
+                A amazing WordPress theme designed specifically for a startup, apps, business, SaaS, and ITdesigned
+                specifically for a startup, services.
+              </div>
+              <div class="col-12 profile-2">
+                <div class="col-2 user-img"><img src="./img/ava-1.png"></div>
+                <div class="col-8 profile-status">
+                  <div class="col-6 user-name">B Siva Rama Krishna Rao (Current employee)</div>
+                  <div class="col-6 user-details">Assistant Store Manager</div>
+                </div>
+                <div class="col-2 user-img"><img src="./img/lg-pn-1.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+      </div>
+      <div style="text-align:center">
+        <span id="active22" class="dot active22" onclick="currentSlide(1)"></span>
+        <span id="active22" class="dot" onclick="currentSlide(2)"></span>
+        <span id="active22" class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); 
+          // dots[slideIndex - 1].className =("active");
+          // captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+      </script>
+    </div>
+  </div>
+  </div>
+  <!-- <div class="container-fluid"> -->
+  <div class="shape-11">
+    <div class="elementor-shape elementor-shape-top for-colour" data-negative="false">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path class="elementor-shape-fill elementor-shape-fill-buttom" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+    c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+    c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <section>
+    <div class="blog-box-top container">
+      <p class="text-center fs-2 service-footer">From our blog</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4 w3-animate-bottom">
+        <div class="col">
+          <div class="card blog-card">
+            <div class="hover01">
+              <figure><img src="./img/11-740x540.png"></figure>
+            </div>
+            <div class="card-body hover-margin">
+              <h5 class="card-title"><a href="https://sala.uxper.co/category/resources/">Tutorials</a></h5>
+              <p class="card-text"><a href="https://sala.uxper.co/category/resources/">How much does it cost to start
+                  and run a website?</a></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card blog-card">
+            <div class="hover01">
+              <figure><img src="./img/2nd.png"></figure>
+            </div>
+            <div class="card-body hover-margin">
+              <h5 class="card-title"><a href="https://sala.uxper.co/category/resources/">Tutorials Ui/Ux Design</a></h5>
+              <p class="card-text"><a href="https://sala.uxper.co/category/resources/">How to become a web designer in 2021</a></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card blog-card">
+            <div class="hover01">
+              <figure><img src="./img/3rd.png"></figure>
+            </div>
+            <div class="card-body hover-margin">
+              <h5 class="card-title"><a href="https://sala.uxper.co/category/resources/">Resources Tutorials</a></h5>
+              <p class="card-text"><a href="https://sala.uxper.co/category/resources/">20 best affiliate programs for online creators in 2021</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="main-box-6 container-fluid">
+    <div class="container inner-box-4">
+      <div class="box-6-contant">
+        <div class="box-6-sub-header">COMPANY’S VISION</div>
+        <div class="elementor-kit-3655">The story behind how our company was founded</div>
+        <p class="footer-text-container-6">It is a long established fact that a reader will be distracted by the
+          readable
+          content</p>
+
+        <a href="https://sala.uxper.co/contact-01/" target="_blank"><button type="button"
+            class="read-more devider-right btn btn-primary">Contact Us</button></a>
+      </div>
+      <!-- <div class="col-6">
+        <img class="box-4-img" src="./img/women.webp">
+      </div> -->
+    </div>
+    </div>
+
+  </section>
+
+  <section class="">
+    <div class="container text-start text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3 text-start">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="./img/black.svg">
+          </h6>
+          <p class="footer-dis">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-5 mt-5">
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6> -->
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5 mt-5">
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6> -->
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5 mt-5">
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6> -->
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 mt-5">
+          <!-- Content -->
+          <p class="footer-dis">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <section>
+
+            <!-- <div class="col-md-12 col-md-offset-3">
+                   <div class="well"> -->
+            <!-- <form action="#"> -->
+            <div class=" col-12">
+              <input class="col-8 col-md-7 input-field btn btn-lg button-margin-input" name="email" id="email"
+                type="email" placeholder="Your Email" required>
+              <button class="col-4 col-md-5 submit-field btn btn-info btn-lg button-margin"
+                type="submit">Subscribe</button>
+            </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  </section>
+  <div class="lower-footer">
+    <div class="container">
+      <div class="text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset float-end" href="https://mdbootstrap.com/">© 2021 Uxper. All rights reserved
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+</body>
+
+</html>
