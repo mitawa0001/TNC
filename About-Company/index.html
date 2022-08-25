@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<head>
+  <title>About Company-Draft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./index.css">
+  <!-- <script type="text/javascript" src="./index.js"></script>   -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+  <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./img/correct.png" type="image/x-icon">
+  
+</head>
+<body onload="load()">
+  <div class="navbar">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div class="sidenav">
+          <a class="dropdown-btn" onclick="clickf(1)">Dropdown
+            <i class="fa-light fa-angle-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p1">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a class="dropdown-btn" onclick="clickf(2)">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a class="dropdown-btn" onclick="clickf(3)">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p3">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a class="dropdown-btn" onclick="clickf(4)">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-container hide hided" id="p4">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+
+        </div>
+        <div class="email-help">
+          <p>Email.hello@uxper.co</p>
+          <div class="d-flex social-icon">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex"> -->
+      <span id="mobile-manu" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9870;</span>
+      <a class="navbar-brand mobile-logo" href="https://sala.uxper.co/"><img class="" src="./img/black.svg"></a>
+      <a class="navbar-brand desktop-hide" href="https://sala.uxper.co/"><img class="" src="./img/mobile-view.png"></a>
+    <!-- </div> -->
+    
+                <script>
+                  function clickf(value) {
+                
+                    $('.hided').addClass('hide')
+                    $('#p' + value).removeClass('hide')
+                  }
+                </script>
+                <script>
+                  function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                  }
+
+                  function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                  }
+                </script>
+   
+    <div class="alpha">
+      <div class="main-box-nav">
+        <div class="dropdown">
+          <button class="dropbtn"><span>Demos
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Contact 01 1</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><span>pages
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><span>Portfolio
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><span>Blog
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><span>Shop
+            <i class="fa fa-caret-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="container column d-flex ">
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 2</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 3</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                </div>
+                <div class="row col-sm-3 dropdown-header-main-box">
+                  <p class="dropdown-list-header ">Category 1</p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+                  <p class="dropdown-list-item"><a href="#">Link 1</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="btn btn-success nav-button for-hide " type="submit">Let's Talk</button>
+    </div>
+  </div>
+  
+  <!-- <button class="theme-button" onclick="dark()">Toggle dark mode</button> -->
+
+  <script>
+  function dark(){
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
+<div class="form-check form-switch theme-button" onclick= "dark()">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  <!-- <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label> -->
+</div>
+
+
+
+
+  <a target="_blank" class="purchase-theme btn" href="https://1.envato.market/kjZm1z">
+    <i class="icon element">
+      <img loading="lazy" src="https://colabrio.ams3.cdn.digitaloceanspaces.com/stockie/st__envato.svg"
+        alt="envato icon">
+    </i>Get Sala Now
+  </a>
+  <div class="box-1 container ">
+    <div class="col-12 col-sm-6">
+      <div class="col-12 top-sub-heading">about company</div>
+      <!-- <button type="button" class="btn btn-warning start-up">startup</button> -->
+      <div class="header-text-container ">We help small businesses with big hearts make meaningful hires.</div>
+      <!-- <p class="footer-text-container">Awesome product pages. Mobile friendly. Easy.</p> -->
+      <a href="https://sala.uxper.co/contact-01/"><button type="button"
+        class="send-msg btn btn-primary mt-4 common-button">Get in touch</button></a>
+      <!-- <div class="text-container-circle"><img class="inner-circle" src="./img/cicle-s@2x.webp" alt="blue-circle"></div> -->
+    </div>
+    <div class="">
+      <img class="box-1-img" src="./img/artwork-4.webp">
+    </div>
+  </div>
+  <div class="container">
+    <div class="main-box w3-animate-bottom">
+      <div class="col-12 col-sm-6 listing-wrap">
+        <div class="heading-top">Our Mission</div>
+        <div class="col-12 col-sm-9">
+          <!-- <div class="three-section-heading">24/7 Support</div> -->
+          <p class="listing-box-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Curabitur nec vehicula arcu.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 listing-wrap">
+        <!-- <div class="col-2 "><img src="./img/take-ownership.png"></div> -->
+        <div class="col-12 col-sm-9 ">
+          <!-- <div class="three-section-heading">Take Ownership</div> -->
+          <p class="listing-box-footer-2">
+            Vestibulum vitae orci et nisi iaculis commodo vitae eu velit.
+             Nullam id erat in orci consequat aliquam at sed nisi. Nullam consequat leo at justo consectetur,
+             vel vehicula odio consequat. Aliquam accumsan dictum leo sed dignissim.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="service-box w3-animate-bottom">
+    <div class="service-main-box">
+      <div class="col-sm-3 service-single">
+        <p class="counting-header"><span class="value-sign" id='0103'>2015</span></p>
+        <p class="align-content-center sector-type">Year founded</p>
+      </div>
+      <div class="col-sm-3 service-single">
+        <p class="counting-header"><span class="value-sign" id='0101'>0</span><span class="value-sign">+</span></p>
+        <p class="align-content-center sector-type">Projects</p>
+      </div>
+      <div class="col-sm-3 service-single">
+        <p class="counting-header"><span class="value-sign" id='0102'>0</span><span class="value-sign">+</span></p>
+        <p class="align-content-center sector-type">awwarts</p>
+      </div>
+      <div class="col-sm-3 service-single">
+        <p class="counting-header"><span class="value-sign" id='0104'>50</span><span class="value-sign">+</span></p>
+        <p class="align-content-center sector-type">Team members</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+   <script>
+    function animate(obj, initVal, lastVal, duration) {
+      let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime) => {
+
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+          startTime = currentTime;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+      };
+      //start animating
+      window.requestAnimationFrame(step);
+    }
+    let text1 = document.getElementById('0101');
+    let text2 = document.getElementById('0102');
+    let text3 = document.getElementById('0103');
+    let text4 = document.getElementById('0104');
+    const load = () => {
+      animate(text1, 0, 60, 1000);
+      animate(text2, 0, 10, 1000);
+      animate(text3, 0, 2015,1000);
+      animate(text4, 0, 50, 1000);
+    }
+  </script>
+
+<div class="container">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+  </div>
+</div>
+
+  <div class="container">
+    <p class="text-center service">MEET OUR TEAM</p>
+    <p class="text-center service-footer">Take a closer look at us</p>
+
+    <div class="service-box w3-animate-bottom">
+      <div class="service-main-box">
+        <div class="col-12 col-sm-4 profile-card text-center p-4 rounded-3">
+          <div class="profile-photo ">
+              <img src="./img/mem-3.png" alt="profile Photo" class="img-fluid">
+          </div>
+          <h3 class="pt-3">Rajnish Kumar</h3>
+          <p class="text-secondary-1">Ceo</p>
+          <div class="social-links ">
+              <ul>
+                <li><a href="#"><i class="fa fa-instagram" style="font-size:18px"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" style="font-size:18px"></i></a></li>
+                                          
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 profile-card text-center p-4 rounded-3">
+          <div class="profile-photo">
+              <img src="./img/mem-4.png " alt="profile Photo" class="img-fluid">
+          </div>
+          <h3 class="pt-3">Atena Stak</h3>
+          <p class="text-secondary-1">UI/UX Designer</p>
+          <div class="social-links">
+              <ul>
+                <li><a href="#"><i class="fa fa-twitter" style="font-size:18px"></i></a></li>
+                
+                <li><a href="#"><i class="fa fa-instagram" style="font-size:18px"></i></a></li>                     
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 profile-card text-center p-4 rounded-3">
+          <div class="profile-photo ">
+              <img src="./img/mem-8.webp" alt="profile Photo" class="img-fluid">
+          </div>
+          <h3 class="pt-3">Susana Medy</h3>
+          <p class="text-secondary-1">Developer</p>
+          <div class="social-links">
+              <ul>
+                <li><a href="#"><i class="fa linkedin" style="font-size:18px"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" style="font-size:18px"></i></a></li>                         
+              </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="view-all-team">
+      <a href="https://sala.uxper.co/contact-01/"><button type="button"class="send-msg btn btn-primary mt-4 common-button">View all team</button></a>
+    </div>
+  </div>
+
+<div class="over-invester-box">
+  <div class="container">
+    <p class="service11">Our investors  </p>
+    <p class="service-footer11">We’re lucky to be joined on this journey by some of the
+      best investors in the game.</p>
+<!-- <div class="investors-logos">
+    <div class="invaster-single"><i class="fa fa-car" style="font-size:60px;color:#eeeeee;"></i></div> -->
+    <div class="container">
+      <div class="service-box w3-animate-bottom">
+        <div class="service-main-box">
+          <div class="col-sm-2 col-6 service-single-investor">
+            <p class="counting-header-investor"><i class="fa fa-slack" style="font-size:60px;color:#eeeeee;"></i></p>
+          </div>
+          <div class="col-sm-2 col-6 service-single-investor">
+            <p class="counting-header-investor"><i class="fa fa-behance" style="font-size:60px;color:#eeeeee;"></i></p>
+          </div>
+          <div class="col-sm-2 col-6 service-single-investor">
+            <p class="counting-header-investor"><i class="fa fa-github" style="font-size:60px;color:#eeeeee;"></i></p>
+          </div>
+          <div class="col-sm-2 col-6 service-single-investor">
+            <p class="counting-header-investor"><i class="fa fa-slack" style="font-size:60px;color:#eeeeee;"></i></p>
+          </div>
+          <div class="col-sm-2 col-6 service-single-investor">
+            <p class="counting-header-investor"><i class="fa fa-vimeo" style="font-size:60px;color:#eeeeee;"></i></p>
+          </div>
+          <div class="col-sm-2 col-6 service-single-investor">
+            <p class="counting-header-investor"><i class="fa fa-slack" style="font-size:60px;color:#eeeeee;"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ul>
+  
+</div>
+
+
+
+
+  </div>
+</div>
+    <section class="main-box-6 container-fluid">
+    <div class="container inner-box-4">
+      <div class="box-6-contant">
+        <div class="box-6-sub-header">COMPANY’S VISION</div>
+        <div class="elementor-kit-3655">The story behind how our company was founded</div>
+        <p class="footer-text-container-6">It is a long established fact that a reader will be distracted by the
+          readable content</p>
+
+        <a href="https://sala.uxper.co/contact-01/" target="_blank"><button type="button"
+            class="read-more devider-right btn btn-primary">Contact Us</button></a>
+      </div>
+      <!-- <div class="col-6">
+        <img class="box-4-img" src="./img/women.webp">
+      </div> -->
+    </div>
+    </div>
+
+  </section>
+<footer>
+  <section class="">
+    <div class="container text-start text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3 text-start">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="./img/black.svg">
+          </h6>
+          <p class="footer-dis">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-5 mt-5">
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6> -->
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5 mt-5">
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6> -->
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5 mt-5">
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6> -->
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 mt-5">
+          <!-- Content -->
+          <p class="footer-dis">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <section>
+
+            <!-- <div class="col-md-12 col-md-offset-3">
+                   <div class="well"> -->
+            <!-- <form action="#"> -->
+            <div class=" col-12">
+              <input class="col-8 col-md-7 input-field btn btn-lg button-margin-input" name="email" id="email"
+                type="email" placeholder="Your Email" required>
+              <button class="col-4 col-md-5 submit-field btn btn-info btn-lg button-margin"
+                type="submit">Subscribe</button>
+            </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  </section>
+  <div class="lower-footer">
+    <div class="container">
+      <div class="text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset float-end" href="https://mdbootstrap.com/">© 2021 Uxper. All rights reserved
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+</body>
+
+</html>
