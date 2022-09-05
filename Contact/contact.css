@@ -8,7 +8,7 @@
     right: 3.5%;
     bottom: 50%;
     transform: rotate(90deg) translate(0%, -180%);
-}
+}   
 
 .form-switch .form-check-input {
     width: 4em !important;
@@ -1059,11 +1059,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .your-email {
     position: absolute !important;
-    width: 100% !important;
+    width: 77% !important;
     border-radius: 4px !important;
-    color: #333333;
+   
 }
-
 .sub-now {
     position: relative;
     left: 291px;
@@ -1281,9 +1280,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .input-group-btn {
     position: absolute;
-    right: 295px;
+    right: 440px;
     top: 0px;
-
 }
 
 .service-main-box {
@@ -1907,8 +1905,7 @@ figure {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: #252428 !important;
-    border-color: #333333 !important;
+   
     color: #cccccc !important;
     -webkit-appearance: none;
     -moz-appearance: none;
