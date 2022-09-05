@@ -5,8 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-
-function NavScrollExample() {
+const Getintouch = () => {
     return (
         <>
             <div className="container">
@@ -35,10 +34,6 @@ function NavScrollExample() {
                             <div className="col-12 col-sm-12 w3-animate-bottom mt-3">
                                 <p className="contact-header col-12 col-sm-12">Address </p>
                                 <p className="contact-sub-heading col-12 col-sm-12">2866 Oakway Lane, New York, USA</p>
-                                {/* <div className="map-responsive">
-                                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                                    frameBorder="0" style="border:0" allowFullScreen></iframe>
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -50,7 +45,7 @@ function NavScrollExample() {
                             <div className="container h-100">
                                 <div className="row d-flex justify-content-center align-items-center h-100">
                                     <div className="col-12">
-                                        <div className="card">
+                                        <div className="card-11">
                                             <div className="card-body p-3">
                                                 <h2 className="register-now">Register to Our Webinar</h2>
                                                 <div className="form-outline">
@@ -63,7 +58,7 @@ function NavScrollExample() {
                                                     </span>
                                                     <span className="col-12 col-sm-6">
                                                         <input type="time" className="form-control form-control-lg lss"
-                                                        id="start_date" placeholder="Time" name="start_date" value="{{ old('start_date') }}" />
+                                                            id="start_date" placeholder="Time" name="start_date" value="{{ old('start_date') }}" />
                                                     </span>
                                                 </div>
                                                 <div className="form-outline">
@@ -89,5 +84,5 @@ function NavScrollExample() {
         </>
     );
 }
-export default NavScrollExample;
+export default Getintouch;
 

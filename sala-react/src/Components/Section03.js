@@ -6,7 +6,7 @@ import correct from "../Image/correct.png";
 import megacreator4 from "../Image/mega-creator-4.svg";
 
 
-function NavScrollExample() {
+const Section03 = ()=> { 
   return (
     <>
     <section className="box-3">
@@ -38,5 +38,5 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default Section03;
 

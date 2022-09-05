@@ -9,8 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //   import { faGithub } from '@fortawesome/free-solid-svg-icons'
 
 
-
-function NavScrollExample() {
+const Overinvestor = () => {
     return (
         <>
             <div className="over-invester-box">
@@ -48,5 +47,5 @@ function NavScrollExample() {
         </>
     );
 }
-export default NavScrollExample;
+export default Overinvestor;
 

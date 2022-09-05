@@ -4,10 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-
-function NavScrollExample() {
+const Contactsection = () => {
     return (
-       
+        <>
             <div className="box-1 container ">
                 <div className="col-12 col-sm-6 w3-animate-bottom sub-box-1">
                     <div className="col-12 top-sub-heading">contact us</div>
@@ -26,13 +25,12 @@ function NavScrollExample() {
                         </ul>
                     </div>
                 </div>
-                <div className="w3-animate-right sub-box-1">
-                    <img className="box-1-img" src="./img/mega-creator-4.svg"/>
-                </div>
+                {/* <div className="w3-animate-right sub-box-1">
+                    <img className="box-1-img" src="./img/mega-creator-4.svg" />
+                </div> */}
             </div>
-
-       
+        </>
     );
 }
-export default NavScrollExample;
+export default Contactsection;
 

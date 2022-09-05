@@ -1,12 +1,9 @@
 import React from 'react'
 import "./../Components/header.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import rocket from "../Image/rocket.svg";
-// import megacreator4 from "../Image/mega-creator-4.svg";
 
-
-function NavScrollExample() {
+const Vision = () => {
     return (
         <section className="main-box-6 container-fluid">
             <div className="container inner-box-4">
@@ -21,5 +18,5 @@ function NavScrollExample() {
         </section>
     );
 }
-export default NavScrollExample;
+export default Vision;
 

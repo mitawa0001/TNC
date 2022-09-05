@@ -5,8 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import rocket from "../Image/rocket.svg";
 // import megacreator4 from "../Image/mega-creator-4.svg";
 
-
-function NavScrollExample() {
+const Footer = () => {
     return (
         <>
             <footer>
@@ -97,5 +96,5 @@ function NavScrollExample() {
         </>
     );
 }
-export default NavScrollExample;
+export default Footer;
 

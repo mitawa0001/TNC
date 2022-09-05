@@ -5,8 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import correct from "../Image/correct.png";
 import megacreator4 from "../Image/mega-creator-4.svg";
 
-
-function NavScrollExample() {
+const Section04 = () => {
     return (
         <>
             <div className="container">
@@ -50,5 +49,5 @@ function NavScrollExample() {
     );
 }
 
-export default NavScrollExample;
+export default Section04;
 

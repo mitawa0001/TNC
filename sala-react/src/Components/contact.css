@@ -694,7 +694,22 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-top: 4.5rem;
 }
 
-
+.main-location {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    padding: 43px 73px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #333333 !important;
+    margin: 20px 9px;
+    width: 31% !important;
+    color: #cccccc;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+}
 .main-box {
     display: flex;
     flex-direction: row;
@@ -1232,9 +1247,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: #f9af18 !important;
     border-bottom: 2px solid;
 } */
-/* 
-.card {
-
+.card-11 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1244,15 +1257,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
-    padding: 60px 40px;
-    background: white !important;
-    box-shadow: 3px 3px 15px 0px rgb(228 228 228);
-
-} */
-/* 
-.card:hover {
-    box-shadow: 0px 0px 17px 3px rgb(188 188 188);
-} */
+    padding: 40px 30px;
+    background: linear-gradient(180deg, #1E54F3 0%, #604DE0 99.99%, rgba(0, 87, 252, 0) 100%);
+    box-shadow: none;
+}
 
 .hover-margin {
     margin-top: 20px;

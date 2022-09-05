@@ -6,7 +6,7 @@ import takeownership from "../Image/take-ownership.png";
 import security from "../Image/security.png";
 
 
-function NavScrollExample() {
+const Section01 = () => {
   return (
     <>
     <div className="box-1 container ">
@@ -53,5 +53,5 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default Section01;
 
