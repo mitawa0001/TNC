@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<head>
+  <title>About Company-Draft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./about.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./img/correct.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/#[[latestVersion]]#/mdb.min.css" rel="stylesheet" />
+</head>
+
+
+<body onload="load()">
+  <script>
+    $(document).ready(function () {
+      $(".aaa").click(function () {
+        $("div.d1").toggle(1500);
+      });
+    });    
+  </script>
+
+  <div class="query-place">
+    <button class="aaa">Place a Query</button>
+    <div class="d1" style="padding:10px;width:250px">
+
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3 col-12">
+          <input type="text" class="form-control" id="email" placeholder="Your Name" name="name">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="pwd" placeholder="Email" name="pswd">
+        </div>
+
+        <div class="col-12 col-md-12">
+          <input type="text" class="form-control" id="email" placeholder="Your City" name="email">
+        </div>
+        <div class="col-12 col-md-12 ">
+          <input type="number" class="form-control" id="email" placeholder="Phone Number" name="email">
+        </div>
+
+
+        <div class="mb-3 mt-3 col-12 col-md-12">
+          <textarea name="textarea-651" cols="20" rows="5"
+            class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required col-12 p-2" aria-required="true"
+            aria-invalid="false" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary ">Send</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="floating-menu float-menu-1 fm-ready">
+    <ul
+      class="fm-bar fm-right fm-connected fm-white-icon fm-white-icon-over fm-white-label-text fm-side-space fm-button-space fm-css-anim"
+      style="right: 0px; top: 40%;">
+      <li class="fm-item-1-0"><a href="tel:+919878901896" target="_blank">
+          <div class="fm-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="fm-label" style="opacity: 0;">Call us</div>
+        </a></li>
+      <li class="fm-item-1-1"><a href="https://web.whatsapp.com/send?phone=+91 9878901896" target="_blank">
+          <div class="fm-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="fm-label" style="opacity: 0;">whatsapp</div>
+        </a></li>
+      <li class="fm-item-1-2"><a href="mailto:bionialhealthcare@gmail.com" target="_blank">
+          <div class="fm-icon"><i class="fas fa-mail-bulk"></i></div>
+          <div class="fm-label" style="opacity: 0;">Email</div>
+        </a></li>
+      <li class="fm-item-1-3"><a href="/wp-content/uploads/2022/07/Image.pdf" target="_blank">
+          <div class="fm-icon"><i class="far fa-file-pdf"></i></div>
+          <div class="fm-label" style="opacity: 0;">Download</div>
+        </a></li>
+    </ul>
+  </div>
+
+
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0; z-index: 5000;" id="rightMenu">
+    <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">home</a>
+    <a href="#" class="w3-bar-item w3-button">Company profile</a>
+    <a href="#" class="w3-bar-item w3-button">Infrastructure</a>
+    <a href="#" class="w3-bar-item w3-button">Our Products</a>
+    <a href="#" class="w3-bar-item w3-button">Careers</a>
+    <a href="#" class="w3-bar-item w3-button">Contact</a>
+  </div>
+  
+  <script>
+    function openRightMenu() {
+      document.getElementById("rightMenu").style.display = "block";
+    }
+    function closeRightMenu() {
+      document.getElementById("rightMenu").style.display = "none";
+    }
+  </script>
+
+
+
+
+  <div id="Header_wrapper">
+    <!-- #Header -->
+    <header id="Header">
+      <div id="Action_bar">
+        <div class="container">
+          <div class="column one">
+            <ul class="contact_details">
+              <li class="slogan">
+                <marquee class="welcome-wrapper"> Bionial Healthcare has always pioneered to provide innovative and
+                  quality products to Indian Healthcare, and to maintain consistency we have our Manufacturing
+                  Facilities who have globally accepted manufacturing practice certificates like cGMP, WHO – GMP, ISO.
+                </marquee>
+              </li>
+            </ul>
+            <ul class="social"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- second header -->
+      <div class="container">
+        <!-- <div class="column one"> -->
+        <div class="top_bar_left">
+          <!-- <div class="header-one-img"> -->
+          <a href="./about.html" title="bionialhealthcare">
+            <img class="logo" src="./img/cropped-LOGO-BIONIAL (1).png" />
+          </a>
+          <div class="w3-teal for-mobile">
+            <button class="w3-button w3-teal w3-xlarge w3-right " onclick="openRightMenu()">&#9776;</button>
+          </div>
+          <div class="banner_wrapper hide">
+            <div class="infor-wrapper">
+              <ul class="header-one-contact-box">
+                <li class="contact-box-single "><a href="tel: +91 9878901896"><i
+                      class="fa fa-phone alpha-icon"></i></i>+91 9878901896</a></li>
+
+                <li class="contact-box-single"><a href="mailto:bionialhealthcare@gmail.com">
+                    <i class="fa fa-envelope alpha-icon"></i></i>bionialhealthcare@gmail.com</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search Product">
+            <button class="search-button">
+              <i class="fa fa-search alpha-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light nav-2 mt-3">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+        <!-- Left links -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link border-first" href="#">Home </a> </li>
+          <div class="dropdown">
+            <button class="dropbtn">Company Profile<i class="fa fa-caret-down mx-1"></i></button>
+            <div class="dropdown-content">
+              <a href="#">About</a>
+              <a href="#">Directors Message</a>
+              <a href="#">Mission and Vision</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Infrastructure<i class="fa fa-caret-down mx-1"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Manufacturing</a>
+              <a href="#">Product</a>
+              <a href="#">Quality</a>
+              <a href="#">Factory Tour</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Our Products<i class="fa fa-caret-down mx-1"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Tablets</a>
+              <a href="#">Capsules</a>
+              <a href="#">Syrups Liquids</a>
+              <a href="#">Beta Lactum</a>
+            </div>
+          </div>
+          <li class="nav-item"><a class="nav-link" href="#"> Careers </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
+
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  </header>
+  <!-- slider -->
+  <div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/fullbanner-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/fullbanner-3.png" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- section third -->
+  <div class="container d-flex flex-row flex-wrap my-5">
+    <div class="col-12 col-sm-6 mt-4">
+      <p class="section-3-data">Bionial Healthcare has always pioneered to provide innovative and quality products to
+        Indian Healthcare, and to
+        maintain consistency we have our Manufacturing Facilities who have globally accepted manufacturing practice
+        certificates like GMP, WHO – GMP Certification units GLP Certification , ISO Certification . The group has
+        maintained a continuous growth trajectory with the help of our dedicated team & never say die attitude. After
+        having the class manufacturing facility , the group forayed into the medicine field.</p>
+
+      <p class="section-3-data">With the belief that serving humanity is serving GOD, our endeavourer is focused towards
+        making available the
+        best quality of medicine to eliminate the sufferings of mankind. We work on strong business ethics to provide
+        full value to our customers.</p>
+    </div>
+    <div class="col-12 col-sm-6">
+      <img class="section-3-img" src="./img/img-1-1.png" alt="woman img">
+    </div>
+
+  </div>
+  <!-- section-4 -->
+  <div class="container-fluid  section-4-box">
+    <div class="container d-flex flex-wrap">
+      <div class="section-4-single floating">
+        <div class="section-4-img-box">
+          <img class="" src="./img/circle.png" alt="circle image">
+        </div>
+        <h3 class="section-4-header">Our Vision</h3>
+        <p class="section-4-footer">To construct a healthy India by providing quality and value for money products. To
+          strengthen our presence
+          and expand globally in the pharmaceutical market.”</p>
+      </div>
+      <div class="section-4-single ">
+        <div class="section-4-img-box">
+          <img class="" src="./img/circle.png" alt="circle image">
+        </div>
+        <h3 class="section-4-header">Our Vision</h3>
+        <p class="section-4-footer">To construct a healthy India by providing quality and value for money products. To
+          strengthen our presence
+          and expand globally in the pharmaceutical market.”</p>
+      </div>
+      <div class="section-4-single floating">
+        <div class="section-4-img-box">
+          <img class="" src="./img/circle.png" alt="circle image">
+        </div>
+        <h3 class="section-4-header">Our Vision</h3>
+        <p class="section-4-footer">To construct a healthy India by providing quality and value for money products. To
+          strengthen our presence
+          and expand globally in the pharmaceutical market.”</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- section-5 -->
+
+
+  <div class="section mcb-section  mt  bg-cover"
+    style="padding-top:0px; padding-bottom:0px; background-color:; background-image:url(./img/m-ones-s.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover">
+    <div class="section_wrapper mcb-section-inner">
+      <div class="container">
+        <h2 class="section-5-header">Our products</h2>
+        <!-- single single box start here -->
+        <div class="section-box-modle d-flex flex-wrap my-5">
+          <div class="section-5-single hover01">
+            <img class="section-5-img" src="./img/Tablets-img.png">
+            <h3>Tablets</h3>
+          </div>
+          <div class="section-5-single hover01">
+            <img class="section-5-img" src="./img/s-img-5.png">
+            <h3>Tablets</h3>
+          </div>
+          <div class="section-5-single hover01">
+            <img class="section-5-img" src="./img/s-img-2.jpg">
+            <h3>Tablets</h3>
+          </div>
+          <div class="section-5-single hover01">
+            <img class="section-5-img" src="./img/s-img-3.jpg">
+            <h3>Tablets</h3>
+          </div>
+          <div class="section-5-single hover01">
+            <img class="section-5-img" src="./img/s-img-4.png">
+            <h3>Tablets</h3>
+          </div>
+          <div class="section-5-single hover01">
+            <img class="section-5-img" src="./img/s-img-5.png">
+            <h3>Tablets</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section-6 -->
+  <div class="container d-flex flex-wrap">
+    <h2 class="section-6-heading">Our <span>Manufacturing Plant</span> </h2>
+    <div class="box-six-img">
+      <img class="single-section-six" src="./img/machine-2.png" alt="machine image" />
+    </div>
+    <div class="box-six-img">
+      <img class="single-section-six" src="./img/dry-powder-injection-machine.png" alt="machine image" />
+    </div>
+    <div class="box-six-img">
+      <img class="single-section-six" src="./img/machine-2.png" alt="machine image" />
+    </div>
+    <div class="box-six-img">
+      <img class="single-section-six" src="./img/machine-2.png" alt="machine image" />
+    </div>
+    <div class="box-six-img">
+      <img class="single-section-six" src="./img/machine-2.png" alt="machine image" />
+    </div>
+  </div>
+  <!-- section-7 -->
+  <div class="section mcb-section  mt  bg-cover"
+    style="padding-top:0px; padding-bottom:0px; background-color:; background-image:url(./img/bg-1.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover">
+    <div class="section_wrapper mcb-section-inner">
+      <div class="container">
+        <h2 class="section-5-header text-center">Who We Are </h2>
+        <!-- single single box start here -->
+        <div class="section-box-modle-7 d-flex flex-wrap my-5">
+          <div class="extra-line floating">
+            <div class="section-7-single ">
+              <div class="header-7">our values</div>
+              <div class="col-12 d-flex flex-wrap">
+                <div class="col-10">
+                  <div class="footer-7">We believe that serving humanity is serving GOD. To eliminate the sufferings of
+                    mankind, our endeavor is focused towards making available the best quality medicine
+                  </div>
+                </div>
+                <div class="col-2 section-7-icon">
+                  <div class="timeline-icon "><i class="fa fa-globe"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-box-modle-7 d-flex flex-wrap my-5">
+          <div class="extra-line-2">
+            <div class="section-7-single-2">
+              <div class="header-7" style="color: #4EB543;">our values</div>
+              <div class="col-12 d-flex flex-wrap">
+                <div class="col-2 section-77-icon">
+                  <div class="timeline-icon "><i class="fa fa-rocket"></i></div>
+                </div>
+                <div class="col-10">
+                  <div class="footer-7" style="background: #4EB543;;">We believe that serving
+                    humanity is serving GOD. To eliminate the sufferings of
+                    mankind, our endeavor is focused towards making available the best quality medicine
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-box-modle-7 d-flex flex-wrap my-5">
+          <div class="extra-line-55 floating">
+            <div class="">
+              <div class="header-7" style="color :#3A3270;">Quality Assurance</div>
+              <div class="col-12 d-flex flex-wrap">
+                <div class="col-10">
+                  <div class="footer-7" style="background: linear-gradient(#65286D,#3A3270);">We believe that serving
+                    humanity is serving GOD. To eliminate the sufferings of
+                    mankind, our endeavor is focused towards making available the best quality medicine
+                  </div>
+                </div>
+                <div class="col-2 section-7-icon" style="background: linear-gradient(#65286D,#3A3270);">
+                  <div class="timeline-icon "><i class="fa fa-user"></i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-box-modle-7 d-flex flex-wrap my-5">
+          <div class="extra-line-3">
+            <div class="section-7-single-2">
+              <div class="header-7" style="color :#0A2C80;">Quality Assurance</div>
+              <div class="col-12 d-flex flex-wrap">
+                <div class="col-2 section-7-icon"
+                  style="background: linear-gradient(#2FD8D8,#0A2C80); border-bottom-left-radius: 15px; border-bottom-right-radius: 0px;">
+                  <div class="timeline-icon "><i class="fa fa-briefcase"></i></div>
+                </div>
+                <div class="col-10">
+                  <div class="footer-7" style="background: linear-gradient(#2FD8D8,#0A2C80);">We believe that serving
+                    humanity is serving GOD. To eliminate the sufferings of
+                    mankind, our endeavor is focused towards making available the best quality medicine
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <!-- section-8-counting -->
+  <div class="container">
+    <div class="service-box w3-animate-bottom">
+      <div class="service-main-box">
+        <div class="col-sm-3 service-single me-2">
+          <div class="w-100 d-flex justify-content-center">
+            <img class="text-center " src="./img/plus.png" alt="thumb">
+          </div>
+          <p class="counting-header"><span class="value-sign ms-2" id='0102'>1</span><span class="value-sign">+</span>
+          </p>
+          <p class="align-content-center sector-type">Years of Experience</p>
+        </div>
+        <div class="col-sm-3 service-single">
+          <div class="w-100 d-flex justify-content-center">
+            <img class="text-center " src="./img/people.png" alt="thumb">
+          </div>
+          <p class="counting-header"><span class="value-sign ms-2" id='0101'>400</span><span class="value-sign">+</span>
+          </p>
+          <p class="align-content-center sector-type">Satified Customers</p>
+        </div>
+
+        <div class="col-sm-3 service-single">
+          <div class="w-100 d-flex justify-content-center">
+            <img class="text-center " src="./img/thoumb.png" alt="thumb">
+          </div>
+          <p class="counting-header"><span class="value-sign ms-2" id='0103'>200</span></p>
+          <p class="align-content-center sector-type">Products</p>
+        </div>
+        <div class="col-sm-3 service-single">
+          <div class="w-100 d-flex justify-content-center">
+            <img class="text-center " src="./img/graph.png" alt="thumb">
+          </div>
+          <p class="counting-header"><span class="value-sign ms-2" id='0104'>1</span><span class="value-sign">+</span>
+          </p>
+          <p class="align-content-center sector-type">Manufacturing plant</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function animate(obj, initVal, lastVal, duration) {
+      let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime) => {
+
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+          startTime = currentTime;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+      };
+      //start animating
+      window.requestAnimationFrame(step);
+    }
+    let text1 = document.getElementById('0101');
+    let text2 = document.getElementById('0102');
+    let text3 = document.getElementById('0103');
+    let text4 = document.getElementById('0104');
+    const load = () => {
+      animate(text1, 0, 200, 1000);
+      animate(text2, 0, 400, 1000);
+      animate(text3, 0, 1, 1000);
+      animate(text4, 0, 1, 1000);
+    }
+  </script>
+
+
+  <!-- section-9 -->
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/GMP-logo (1).png" class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/TCL-logo.png" class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/s-img-2.jpg" class="d-block " alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+  <!-- slider start -->
+
+  <div class="container mt-4">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner mt-4">
+
+        <div class="carousel-item active">
+          <img src="./img/100.png" class="d-block w-20 border me-2 p-2 for-resp" alt="...">
+          <img src="./img/GMP-logo (1).png" class="d-block w-20 border me-2 p-3 for-resp" alt="...">
+          <img src="./img/jas-logo.png" class="d-block w-20 border me-2 p-3 for-resp" alt="...">
+          <img src="./img/GLP.png" class="d-block w-20 border me-2 p-2 for-resp" alt="...">
+          <img src="./img/TCL-logo.png" class="d-block w-20 border me-2 p-3 for-resp" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/GLP.png" class="d-block w-20 border me-2 p-2 for-resp" alt="...">
+          <img src="./img/TCL-logo.png" class="d-block w-20 border me-2 p-3 for-resp" alt="...">
+
+          <img src="./img/jas-logo.png" class="d-block w-20 border me-2 p-3 for-resp" alt="...">
+          <img src="./img/100.png" class="d-block w-20 border me-2 p-2 for-resp" alt="...">
+          <img src="./img/GMP-logo (1).png" class="d-block w-20 border me-2 p-3 for-resp" alt="...">
+
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- section-10 -->
+  <div class="container d-flex flex-row flex-wrap my-5">
+    <div class="col-12 col-sm-6 mt-4">
+      <h2 class="section-6-heading text-start mb-3">Third Party <span>Manufacturing</span> </h2>
+      <p class="section-3-data">Third party manufacturing is one of the specialized custom services provided by Bionial
+        Healthcare. Bionial Healthcare has the capabilities to support its clients’ contract manufacturing needs.
+
+      </p>
+
+      <p class="section-3-data">Our third-party manufacturing division has demonstrated expertise and compliance with
+        Good Manufacturing Practices (GMP) regulations as well as WHO-GMP for the clinical manufacturing of
+        pharmaceutical formulations. We understand the chemistry, manufacturing, and control (CMC) guidelines that
+        underscore successful COA.</p>
+      <p class="section-3-data">Third party manufacturing is one of the specialized custom services provided by Bionial
+        Healthcare. Bionial Healthcare has the capabilities to support its clients’ contract manufacturing needs.
+
+      </p>
+      <button type="submit" class="btn btn-primary call-us"><a href="tel:+919872979994" class="us-new"
+          target="_blank">Call Us</a></button>
+    </div>
+    <div class="col-12 col-sm-6 mt-4">
+      <div class="form-box">
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3 col-12">
+            <input type="text" class="form-control" id="email" placeholder="Your Name" name="name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="pwd" placeholder="Email" name="pswd">
+          </div>
+          <div class="mb-3 col-12 d-flex flex-wrap">
+            <div class="col-12 col-md-6 pe-2">
+              <input type="text" class="form-control" id="email" placeholder="Your City" name="email">
+            </div>
+            <div class="col-12 col-md-6 ps-2">
+              <input type="number" class="form-control" id="email" placeholder="Phone Number" name="email">
+            </div>
+
+          </div>
+          <div class="mb-3 mt-3 col-12 col-md-12">
+            <textarea name="textarea-651" cols="20" rows="5"
+              class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required col-12 p-2" aria-required="true"
+              aria-invalid="false" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary call-us send-us">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="mcb-wrap-inner container">
+    <div class="column mcb-column one column_column ">
+      <div class="column_attr clearfix" style="">
+        <div class="social-media-wrapper">
+
+          <div class="fcebook-wrapper floating">
+            <i class="icon-facebook"></i>
+            <span><a href="#" target="blank" style="color:#ffffff; text-decoration: none;">Facebook</a></span>
+
+          </div>
+          <div class="twitter-wrapper">
+            <i class="icon-twitter"></i>
+            <span><a href="#" target="blank" style="color:#ffffff; text-decoration: none;">Twitter</a></span>
+          </div>
+
+          <div class="pinteres-wrapper floating">
+            <i class="icon-pinterest"></i>
+            <span><a href="#" target="blank" style="color:#ffffff; text-decoration: none;">Pinterest</a></span>
+
+          </div>
+
+          <div class="blogger-wrapper">
+            <i class="icon-linkedin"></i>
+            <span><a href="#" target="blank" style="color:#ffffff; text-decoration: none;">Blogger</a></span>
+
+          </div>
+          <div class="google-wrapper floating">
+            <i class="icon-gplus"></i>
+            <span><a href="#" target="blank" style="color:#ffffff; text-decoration: none;">Facebook</a></span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-muted pt-4 aplha-colur">
+    <!-- Section: Social media -->
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="pt-4 aplha-colur">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="./img/cropped-LOGO-BIONIAL (1).png">
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Quick Links
+            </h6>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"><i class="fa fa-arrow-right me-2"></i> Home</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"> <i class="fa fa-arrow-right me-2"></i>About</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"> <i class="fa fa-arrow-right me-2"></i>Our Products</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"> <i class="fa fa-arrow-right me-2"></i>Contract Manfacturing</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"> <i class="fa fa-arrow-right me-2"></i>Career</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"><i class="fa fa-arrow-right me-2"></i>Career</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Our Product
+            </h6>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"> <i class="fa fa-arrow-right me-2"></i>Pricing</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"> <i class="fa fa-arrow-right me-2"></i>Settings</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"><i class="fa fa-arrow-right me-2"></i>Orders</a>
+            </p>
+            <p class="buttom-line">
+              <a href="#!" class="text-reset"><i class="fa fa-arrow-right me-2"></i>Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Plot No. D-97, INDUSTRIAL AREA PHASE 7 SAS NAGAR MOHALI (PUNJAB) -160055
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              jaspreet@bionialhealthcare.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +919815095406, +919878017869</p>
+            <p><i class="fas fa-print me-3"></i> +919815095406, +919878017869</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-start p-4 container" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold " href="https://mdbootstrap.com/">
+        © 2022 Bionial Healthcare Pvt.Ltd. All Rights Reserved. || Web Development and Designing By WebHopers</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

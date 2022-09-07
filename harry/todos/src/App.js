@@ -21,7 +21,6 @@ function App() {
 
 
     setTodos(todos.filter((e) => {
-
       return e!== todo;
     }))
   }

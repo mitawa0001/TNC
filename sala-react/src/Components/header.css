@@ -34,7 +34,7 @@ body {
     background-color: #252428;
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 25px !important;
+    padding: 5px 25px !important;
 
 }
 
@@ -225,6 +225,17 @@ body {
     animation: 3s ease-in-out infinite pulses;
 }
 
+.start-up {
+    margin: 0px 0px 12px 0px;
+    padding: 9px 18px 9px 18px !important;
+    background-color: #FFDD0F !important;
+    border-radius: 20px 20px 20px 20px !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.43em;
+    letter-spacing: 2px;
+}
 .column a:hover {
     border-bottom: solid 1px blue !important;
     color: #0057FC;
@@ -240,16 +251,13 @@ body {
     display: table;
     clear: both;
 }
-
 .main-box-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
     align-items: center;
     justify-content: center;
-
-
 }
 
 body {
@@ -612,14 +620,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
 }
 .header-text-container {
-    font-size: 56px;
+    font-size: 68px;
     font-weight: 600;
-    line-height: 1.08em;
+    line-height: 1.4em;
     margin-bottom: 32px;
-    width: 68%;
+    width: 47%;
     color: #ffffff;
-
-
 }
 
 .text-container-circle {
@@ -629,13 +635,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 
 }
+.for-talk{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.for-talk:hover{
+    background-color: transparent  !important;
+    color: #ffffff ;
 
-.footer-text-container {
-    /* color: #eeeeee; */
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 16px;
-
+}
+.list-item{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .three-section-heading {
@@ -1822,10 +1834,6 @@ figure {
 
 
 
-.active,
-.dot:hover {
-    background-color: #e31212 !important;
-}
 
 .active22 {
     background-color: #1166fc;

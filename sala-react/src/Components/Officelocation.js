@@ -18,7 +18,7 @@ const Officelocation = ()=> {
                         <div className="col-sm-4 main-location">
                             <p className="location-name">New York</p>
                             <p className="align-content-center sector-type ">2866 Oakway Lane, New York, USA</p>
-                            <div className="comman-box text-center w-100"><a href="tel:800-000-000">(+91) 800-000-000</a></div>
+                            <div className="comman-box text-center w-100"></div>
                         </div>
                         <div className="col-sm-4 main-location">
                             <p className="location-name">Hanoi</p>
