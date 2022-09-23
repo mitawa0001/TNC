@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Tripadvisor</title>
+  <title>Square Yards</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="./index.css">
@@ -16,35 +16,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/c0950fbc05.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
-  <!-- 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
-  <!-- Optional theme -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-  <!-- Latest compiled and minified JavaScript -->
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script> -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet"> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="load()">
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+        <a class="navbar-brand" href="#"><img src="./img/logo-2.png"></a>
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link active-nav" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -59,617 +57,930 @@
           <li class="nav-item">
             <a class="nav-link" href="#">contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><button class="review button "><a href="#">Review</a></button></a>
-          </li>
-          <li class="nav-item">
-            <form action="/action_page.php">
-              <select name="cars" id="cars" class="option-box">
-                <option value="volvo" selected>🇪🇸</option>
-                <option value="saab">🇬🇧</option>
-                <option value="opel">🇷🇺</option>
-                <option value="audi">🇨🇳 </option>
-              </select>
-            </form>
-          </li>
-          <li class="nav-item">
-            <form action="/action_page.php">
-              <select name="cars" id="cars" class="option-box second">
-                <option value="volvo" selected>💶</option>
-                <option value="saab">💸</option>
-                <option value="opel">💰</option>
-                <option value="audi" 💶</option>
-              </select>
-            </form>
-          </li>
         </ul>
         <div class="d-flex flex-wrap align-center buttons justify-content-center">
-          <button class="button"><a href="#"> Join</a></button>
-          <div class="login"><a href="#">Log in</a></div>
+          <button class="btn button primary">+ Add Listing</button>
+
         </div>
 
       </div>
     </div>
   </nav>
-  <section class="hero-wrap" style="background-image:url(./img/xbg_1.jpg.pagespeed.ic.EiRxZF1ff8.webp);">
-    <div class="overlay"></div>
-    <div class="container">
+  <section class="hero-wrap" style="background-image:url(./img/fixed-img-alpha.png);">
+    <div class="container ">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
-        <div class="col-lg-8 text-center pb-5">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <h1 class="">Know better. Book better. Go better.</h1>
+        <div class="col-lg-8 pb-5">
+          <div class="row search-bar">
+            <div class="col-lg-12 mt-5">
+              <div class="custom-btn">
+                <button type="button" class="btn button primary"><i class="fa fa-home"></i> Rent home</button>
+                <button type="button" class="btn button normal-button primary"><i class="fa fa-home"></i>Sale
+                  home</button>
+              </div>
+              <div class="search-investor">
+                <section class="indu-field">
+                  <form>
+                    <select id="cars" name="cars" class="input-field">
+                      <div class="nice-selector">
+                        <span><i class="fa fa-home"></i></i></span>
+                        <option value="volvo">PropertyType</option>
+                      </div>
+                      <option value="saab">hello Co-App</option>
+                      <option value="fiat">Flat</option>
+                      <option value="audi">Office</option>
+                    </select>
+                  </form>
+                </section>
+                <section class="indu-field">
+                  <form>
+                    <select id="cars" name="cars" class="input-field">
+                      <option value="volvo"> <i class="fa fa-car"></i>Location</option>
+                      <option value="saab">Chandigarh</option>
+                      <option value="fiat">Gurgram</option>
+                      <option value="audi">Noida</option>
+                    </select>
+                  </form>
+                </section>
+                <section class=" indu-field">
+                  <form>
+                    <select id="cars" name="cars" class="input-field">
+                      <option value="volvo">Sub Location</option>
+                      <option value="saab">Near IT Park</option>
+                      <option value="fiat">Sector 35</option>
+                      <option value="audi">Sector 32</option>
+                    </select>
+                  </form>
+                </section>
+                <section class="indu-field">
+                  <form>
+                    <select id="cars" name="cars" class="input-field">
+                      <option value="volvo">Bedroom</option>
+                      <option value="saab">1</option>
+                      <option value="fiat">2</option>
+                      <option value="audi">3</option>
+                    </select>
+                  </form>
+                </section>
 
+                <section class="indu-field">
+                  <input type="text" class="input-req input-field" id="validationTooltip01" value="Min size (in sqft)"
+                    required>
+                </section>
+                <section class="indu-field">
+                  <input type="text" class="input-req input-field" id="validationTooltip01" value="Max size (in sqft)"
+                    required>
+                </section>
+
+                <div class="slidecontainer w-100 my-5">
+                  <div class="d-flex flex-wrap col-2 justify-content-between mb-3">
+                    <h5 class="rangeline">Submit</h5>
+                    <p class="rangeline">$0 - $<span class="rangeline" id="demo"></span>
+                    </p>
+                  </div>
+                  <!-- <input type="range" min="1" max="1000" value="10" class="slider" id="myRange"> -->
+                  <div class="range-slider">
+                    <div class="wrap">
+                      <input type="range" class="range slider" min="0" max="100" step="0.1" value="50" id="myRange">
+                      <div class="track">
+                        <div class="track-inner"></div>
+                      </div>
+                      <div class="thumb"></div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="w-100 text-center">
+                  <button type="button" class="btn button primary">Find Investor</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.onchange = function () {
+      output.innerHTML = this.value;
+    }
+  </script>
+  <!-- best deals -->
+
+
+
+  <script>
+    const range = document.querySelector('.range')
+    const thumb = document.querySelector('.thumb')
+    const track = document.querySelector('.track-inner')
+
+    const updateSlider = (value) => {
+      thumb.style.left = `${value}%`
+      thumb.style.transform = `translate(-${value}%, -50%)`
+      track.style.width = `${value}%`
+    }
+
+    range.oninput = (e) =>
+      updateSlider(e.target.value)
+
+    updateSlider(50) // Init value
+  </script>
+  <div class="for-dark py-5">
+    <div class="container ">
+      <div class=" row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="w-100 circle-box">
+              <div class="circle-100 my-2">
+                <img src="./img/life-insurance.png" class="card-img-top" alt="...">
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title-1 text-center">Instalment Booking</h5>
+              <p class="card-text-1 text-center">Amet eleifend nostra torquent facilisi pharetra ante gravida cursus
+                auctor consequat metus sociosqu. Aenean nec egestas fusce.</p>
             </div>
           </div>
-          <form action="#" class="search-property-1 mt-md-5">
-            <div class="option1">
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Hotel
-                <label class="form-check-label" for="radio1"></label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Flights
-                <label class="form-check-label" for="radio2"></label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Holidays
-                Rentals
-                <label class="form-check-label" for="radio2"></label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Restaurant
-                <label class="form-check-label" for="radio2"></label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Destinations
-                <label class="form-check-label" for="radio2"></label>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="w-100 circle-box">
+              <div class="circle-100 my-2">
+                <img src="./img/life-insurance.png" class="card-img-top" alt="...">
               </div>
             </div>
-            <div class="row g-0">
-              <div class="col-12 col-sm-3 d-flex h-100">
-                <div class="form-group p-2 mt-2">
-                  <div class="form-field">
-                    <div class="icon"><span class="fa fa-search"></span></div>
-                    <input type="text" class="form-control" placeholder="City or Place Name">
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-3 d-flex h-100">
-                <div class="form-group p-2 mt-2">
-                  <div class="form-field">
-                    <div class="icon"><span class="ion-ios-pin"></span></div>
-                    <input type="date" name="bday" class="form-control" placeholder="Search Location" required
-                      pattern="\d{4}-\d{2}-\d{2}">
-                    <!-- <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}"> -->
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-3 d-flex h-100">
-                <div class="form-group p-2 mt-2">
-                  <div class="form-field">
-                    <div class="icon"><span class="ion-ios-pin"></span></div>
-                    <input type="date" name="bday" class="form-control" placeholder="Search Location" required
-                      pattern="\d{4}-\d{2}-\d{2}">
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-3 d-flex h-100 ">
-                <div class="form-group d-flex w-100 border-0 h-100 mt-2">
-                  <div class="form-field w-100 align-items-center d-flex align-items-stretch h-100">
-                    <a href="#"
-                      class="btn btn-primary d-block w-100 h-100 d-flex align-items-center justify-content-center py-3"><span><i
-                          class="ion-ios-search"></i> Finds Hotels</span></a>
-                  </div>
-                </div>
+            <div class="card-body">
+              <h5 class="card-title-1 text-center">Property Managment</h5>
+              <p class="card-text-1 text-center">Amet eleifend nostra torquent facilisi pharetra ante gravida cursus
+                auctor consequat metus sociosqu. Aenean nec egestas fusce.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="w-100 circle-box">
+              <div class="circle-100 my-2">
+                <img src="./img/life-insurance.png" class="card-img-top" alt="...">
               </div>
             </div>
-          </form>
+            <div class="card-body">
+              <h5 class="card-title-1 text-center">Lifetime Membership</h5>
+              <p class="card-text-1 text-center">Amet eleifend nostra torquent facilisi pharetra ante gravida cursus
+                auctor consequat metus sociosqu. Aenean nec egestas fusce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest Property -->
+  <section>
+    <div class="container my-5">
+      <div class="d-flex flex-wrap justify-content-between my-3">
+        <div>
+          <h2 class="w-100 listed-heading">Latest Listings</h2>
+        </div>
+        <div>
+          <ul class="d-flex manu-bar flex-wrap">
+            <li class="active">All</li>
+            <li id>House</li>
+            <li>Office</li>
+            <li>Appartment</li>
+            <li>Lands</li>
+            <li>Building</li>
+          </ul>
+        </div>
+      </div>
+      <div class=" row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top for-wid" id="push" src="./img/3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title property-heading">For Buy</h5>
+              <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+              <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+              <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+                  class="value">356 </span> Square Ft</div>
+              <div class="d-flex">
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+              </div>
+            </div>
+            <hr>
+            <div class="rate">$93,000<span>/month</span></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top for-wid" id="push" src="./img/2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title property-heading">For Rentals</h5>
+              <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+              <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+              <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+                  class="value">3450 </span> Square Ft</div>
+              <div class="d-flex">
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+              </div>
+            </div>
+            <hr>
+            <div class="rate">$69,000<span>/month</span></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top for-wid" id="push" src="./img/3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title property-heading">For Buy</h5>
+              <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+              <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+              <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+                  class="value">356 </span> Square Ft</div>
+              <div class="d-flex">
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+              </div>
+            </div>
+            <hr>
+            <div class="rate">$93,000<span>/month</span></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top for-wid" id="push" src="./img/2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title property-heading">For Rentals</h5>
+              <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+              <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+              <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+                  class="value">3450 </span> Square Ft</div>
+              <div class="d-flex">
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+                <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+              </div>
+            </div>
+            <hr>
+            <div class="rate">$69,000<span>/month</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- section 2 start -->
-  <div class="container my-4">
-    <h4 class="h5 section-2-sub-heading">Lorem ipsum is placeholder text commonly</h4>
-    <h1 class="h1 section-2-heading">San Francisco</h1>
-    <div class="d-flex flex-wrap">
-      <div class="col-12 col-sm-4">
-        <div class="col-12 d-flex my-5">
-          <div class="col-4 col-sm-2">
-            <img class="location---img" src="./img/city-png.png" alt="city">
-          </div>
-          <div class="col-8 col-md ">
-            <h2 class="location">Jaipur</h2>
-            <h4 class="location-country"><i class="fa fa-map-marker"></i> India</h4>
-            <div class="col-12">
-              <span class="review-count me-1">3.0 </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="ms-1 review-count"> 192,253 Review</span>
-            </div>
+  <!-- for house  on click -->
+
+  <div class="for-house" id="house">
+    <div class="col-12 col-sm-3">
+      <div class="card">
+        <img class="card-img-top for-wid" id="push" src="./img/property-grid-1.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title property-heading">For Rent</h5>
+          <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+          <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+          <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+              class="value">3457 </span> Square Ft</div>
+          <div class="d-flex">
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
           </div>
         </div>
-        <div class="col-12 d-flex my-5">
-          <div class="col-4 col-sm-2">
-            <img class="location---img" src="./img/city-png.png" alt="city">
-          </div>
-          <div class="col-8 col-md ">
-            <h2 class="location">Golden Gate</h2>
-            <h4 class="location-country"><i class="fa fa-map-marker"></i> India</h4>
-            <div class="col-12">
-              <span class="review-count me-1">4.0 </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="ms-1 review-count"> 192,253 Review</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex my-5">
-          <div class="col-4 col-sm-2">
-            <img class="location---img" src="./img/city-png.png" alt="city">
-          </div>
-          <div class="col-8 col-md ">
-            <h2 class="location">San Francisco Bay</h2>
-            <h4 class="location-country"><i class="fa fa-map-marker"></i> India</h4>
-            <div class="col-12">
-              <span class="review-count me-1">3.0 </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="ms-1 review-count"> 192,253 Review</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex my-5">
-          <div class="col-4 col-sm-2">
-            <img class="location---img" src="./img/city-png.png" alt="city">
-          </div>
-          <div class="col-8 col-md ">
-            <h2 class="location">Lands End</h2>
-            <h4 class="location-country"><i class="fa fa-map-marker"></i> India</h4>
-            <div class="col-12">
-              <span class="review-count me-1">5.0 </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="ms-1 review-count"> 192,253 Review</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex my-5">
-          <div class="col-4 col-sm-2">
-            <img class="location---img" src="./img/city-png.png" alt="city">
-          </div>
-          <div class="col-8 col-md ">
-            <h2 class="location">Silicon Valley</h2>
-            <h4 class="location-country"><i class="fa fa-map-marker"></i> India</h4>
-            <div class="col-12">
-              <span class="review-count me-1">4.0 </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="ms-1 review-count"> 192,253 Review</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 d-flex my-5">
-          <div class="col-4 col-sm-2">
-            <img class="location---img" src="./img/city-png.png" alt="city">
-          </div>
-          <div class="col-8 col-md ">
-            <h2 class="location">The Exploratorium</h2>
-            <h4 class="location-country"><i class="fa fa-map-marker"></i> India</h4>
-            <div class="col-12">
-              <span class="review-count me-1">4.0 </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="ms-1 review-count"> 192,253 Review</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-8">
-        <ul class="d-flex my-4 manu-bar">
-          <li class="active">Overview</li>
-          <li>Travel</li>
-          <li>Place</li>
-          <li>Location</li>
-          <li>Thnigs</li>
-          <li>Feedback</li>
-        </ul>
-        <div class="common-details-box w-70">
-          <h2>Explaning the cite by the bay</h2>
-          <p class="w-75">Lorem ipsum dolor sit amet. Et omnis consequuntur sed iste dolorum sit delectus unde qui odio
-            dolorem et
-            ipsum velit sit dolorem possimus et magni odio. Vel optio doloribus ut dolorem neque non sint tempore aut
-            esse tempora non repellat omnis aliquam dolor ea consequatur ipsam. Et dolorem illum aut architecto nesciunt
-            ut laudantium galisum in quaerat consequuntur est dolores minus et rerum iusto et libero beatae! Et fuga
-            temporibus in consectetur impedit est enim dolorem et voluptatem adipisci ea quisquam quod qui recusandae
-            accusantium hic voluptatem dolor.
-
-          </p>
-
-
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active ">
-                <div class="d-flex flex-wrap elements-3">
-                  <img src="./img/download.200.png" class="d-block-1 " alt="...">
-                  <img src="./img/download.200.png" class="d-block-2 block " alt="...">
-                  <img src="./img/download.200.png" class="d-block-1 block" alt="...">
-                </div>
-
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex flex-wrap elements-3">
-                  <img src="./img/slider-22.png" class="d-block-1" alt="...">
-                  <img src="./img/slider-22.png" class="d-block-2 block" alt="...">
-                  <img src="./img/slider-22.png" class="d-block-1 block" alt="...">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex flex-wrap elements-3">
-                  <img src="./img/slider-33.png" class="d-block-1 " alt="...">
-                  <img src="./img/slider-33.png" class="d-block-2 block" alt="...">
-                  <img src="./img/slider-33.png" class="d-block-1 block" alt="...">
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <!-- section-3 -->
-          <div class="common-details-box w-70">
-            <p class="w-75">Lorem ipsum dolor sit amet. </p>
-            <div class="w-100">
-              <div class="w-100">
-                <div class="gallery">
-                  <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
-                    <img class="for-mobile" src="./img/slider-22.png" alt="Cinque Terre" width="340" height="225">
-                  </a>
-
-                </div>
-
-                <div class="gallery">
-                  <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
-                    <img class="for-mobile" src="./img/slider-22.png" alt="Forest" width="340" height="225">
-                  </a>
-
-                </div>
-
-                <div class="gallery">
-                  <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
-                    <img class="for-mobile" src="./img/slider-22.png" alt="Northern Lights" width="340" height="225">
-                  </a>
-                </div>
-              </div>
-              <div class="w-100">
-                <div class="gallery">
-                  <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
-                    <img class="for-mobile" src="./img/slider-22.png" alt="Cinque Terre" width="340" height="225">
-                  </a>
-                </div>
-                <div class="gallery">
-                  <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
-                    <img class="for-mobile" src="./img/slider-22.png" alt="Forest" width="340" height="225">
-                  </a>
-                </div>
-                <div class="gallery">
-                  <a target="_blank" href="https://www.w3schools.com/css/img_5terre.jpg">
-                    <img class="for-mobile" src="./img/slider-22.png" alt="Northern Lights" width="340" height="225">
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+        <hr>
+        <div class="rate">$90,000<span>/month</span></div>
       </div>
     </div>
-  </div>
-  <div class="last-section-box container-fluid">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up"
-          data-aos-duration="1000">
-          <div class="d-flex flex-wrap custom-section-3-header">
-            <div class="d-flex flex-wrap">
-              <span class="fa fa-phone active custom-icon"></span>
-              <i class="fa fa-map-marker custom-icon"></i>
-              <span class="fa fa-building custom-icon"></span>
-              <span class="fa fa-fighter-jet custom-icon"></span>
-            </div>
-            <div class="mt-4">
-              <div class="subheading mb-3">Our Listing</div>
-              <div>
-                <h1 class="mb-4">San Francisco</h1>
-              </div>
-            </div>
-            <div>
-              <ul class="d-flex my-4 manu-bar flex-wrap">
-                <li class="active">Overview</li>
-                <li>Travel</li>
-                <li>Place</li>
-                <li>Location</li>
-                <li>Thnigs</li>
-                <li>Feedback</li>
-              </ul>
-            </div>
-          </div>
 
+    <div class="col-12 col-sm-3">
+      <div class="card">
+        <img class="card-img-top for-wid" id="push" src="./img/3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title property-heading">For Buy</h5>
+          <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+          <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+          <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+              class="value">356 </span> Square Ft</div>
+          <div class="d-flex">
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+          </div>
         </div>
+        <hr>
+        <div class="rate">$93,000<span>/month</span></div>
       </div>
+    </div>
+    <div class="col-12 col-sm-3">
+      <div class="card">
+        <img class="card-img-top for-wid" id="push" src="./img/2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title property-heading">For Rentals</h5>
+          <p class="card-text sub-prop-heading">New Apartment Nice View</p>
+          <div class="location"><i class="fa fa-map-marker "></i>Belmont Gardens, Chicago</div>
+          <div class="my-1"><span class="value ms-0">3 </span>Bed<span class="value">2 </span>Bath <span
+              class="value">3450 </span> Square Ft</div>
+          <div class="d-flex">
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+            <div class="for-cart-box"><i class="fa fa-heart for-icon"></i></div>
+          </div>
+        </div>
+        <hr>
+        <div class="rate">$69,000<span>/month</span></div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- img-fielter -->
+  <div class="container">
+    <div class="d-flex justify-content-between flex-wrap">
       <div class="row">
-        <div class=" col-12 col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100" data-aos-duration="1000">
-          <div class="listing-wrap">
-            <a href="images/list-1.jpg"
-              class="img img-property d-flex align-items-center justify-content-center glightbox"
-              style="background-image:url(./img/alpha.webp)">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span>
-              </div>
-            </a>
-            <div class="text text-center">
-              <!-- <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-food-and-drink"></span>
-              </div> -->
-              <span class="subheading colour-cls">Food &amp; Drinks</span>
-              <div class="col-12">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div><img class="hotel-profile-logo" src="./img/city-png.png"></div>
-              <h4 class="hotel-name">Indian Hotel</h4>
-              <h6><a href="#"><i class="colour-cls">"Love this hotel"</i></a></h6>
-              <div class="col-12 small-icon">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star   "></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" col-12 col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100" data-aos-duration="1000">
-          <div class="listing-wrap">
-            <a href="images/list-1.jpg"
-              class="img img-property d-flex align-items-center justify-content-center glightbox"
-              style="background-image:url(./img/alpha.webp)">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span>
-              </div>
-            </a>
-            <div class="text text-center">
-              <!-- <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-food-and-drink"></span>
-              </div> -->
-              <span class="subheading colour-cls">Food &amp; Drinks</span>
-              <div class="col-12">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div><img class="hotel-profile-logo" src="./img/city-png.png"></div>
-              <h4 class="hotel-name">Indian Hotel</h4>
-              <h6><a href="#"><i class="colour-cls">"Love this hotel"</i></a></h6>
-              <div class="col-12 small-icon">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star   "></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" col-12 col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100" data-aos-duration="1000">
-          <div class="listing-wrap">
-            <a href="images/list-1.jpg"
-              class="img img-property d-flex align-items-center justify-content-center glightbox"
-              style="background-image:url(./img/alpha.webp)">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span>
-              </div>
-            </a>
-            <div class="text text-center">
-              <!-- <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-food-and-drink"></span>
-              </div> -->
-              <span class="subheading colour-cls">Food &amp; Drinks</span>
-              <div class="col-12">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div><img class="hotel-profile-logo" src="./img/city-png.png"></div>
-              <h4 class="hotel-name">Indian Hotel</h4>
-              <h6><a href="#"><i class="colour-cls">"Love this hotel"</i></a></h6>
-              <div class="col-12 small-icon">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star   "></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" col-12 col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100" data-aos-duration="1000">
-          <div class="listing-wrap">
-            <a href="images/list-1.jpg"
-              class="img img-property d-flex align-items-center justify-content-center glightbox"
-              style="background-image:url(./img/alpha.webp)">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span>
-              </div>
-            </a>
-            <div class="text text-center">
-              <!-- <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-food-and-drink"></span>
-              </div> -->
-              <span class="subheading colour-cls">Food &amp; Drinks</span>
-              <div class="col-12">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div><img class="hotel-profile-logo" src="./img/city-png.png"></div>
-              <h4 class="hotel-name">Indian Hotel</h4>
-              <h6><a href="#"><i class="colour-cls">"Love this hotel"</i></a></h6>
-              <div class="col-12 small-icon">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star   "></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" col-12 col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100" data-aos-duration="1000">
-          <div class="listing-wrap">
-            <a href="images/list-1.jpg"
-              class="img img-property d-flex align-items-center justify-content-center glightbox"
-              style="background-image:url(./img/alpha.webp)">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span>
-              </div>
-            </a>
-            <div class="text text-center">
-              <!-- <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-food-and-drink"></span>
-              </div> -->
-              <span class="subheading colour-cls">Food &amp; Drinks</span>
-              <div class="col-12">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div><img class="hotel-profile-logo" src="./img/city-png.png"></div>
-              <h4 class="hotel-name">Indian Hotel</h4>
-              <h6><a href="#"><i class="colour-cls">"Love this hotel"</i></a></h6>
-              <div class="col-12 small-icon">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star   "></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" col-12 col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-          data-aos-delay="100" data-aos-duration="1000">
-          <div class="listing-wrap">
-            <a href="images/list-1.jpg"
-              class="img img-property d-flex align-items-center justify-content-center glightbox"
-              style="background-image:url(./img/alpha.webp)">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span>
-              </div>
-            </a>
-            <div class="text text-center">
-              <!-- <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-food-and-drink"></span>
-              </div> -->
-              <span class="subheading colour-cls">Food &amp; Drinks</span>
-              <div class="col-12">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div><img class="hotel-profile-logo" src="./img/city-png.png"></div>
-              <h4 class="hotel-name">Indian Hotel</h4>
-              <h6><a href="#"><i class="colour-cls">"Love this hotel"</i></a></h6>
-              <div class="col-12 small-icon">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star   "></span>
-              </div>
-            </div>
-          </div>
+        <div class="col-lg-12 text-center my-2">
+          <h3 class=" listed-heading">Gallery</h3>
         </div>
       </div>
-      <div class="container text-center">
-        <button class="button mt-4"><a href="#"> Explore All</a></button>
+      <div class="portfolio-menu mt-2 mb-4">
+        <ul class="filter-bar-ul">
+          <li class=" active click1" data-filter="*">All</li>
+          <li class="" data-filter=".gts">Hotel</li>
+          <li class="" data-filter=".lap">Pool and Beach</li>
+          <li class="" data-filter=".selfie">Appartment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="portfolio-item row">
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/luxury-bedroom-hotel_1150-10836.jpg?w=1380&t=st=1663394260~exp=1663394860~hmac=42bf4909644fc9ccbef5584d467001aac76d6b261687c67d889758f35748f4e1"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/luxury-bedroom-hotel_1150-10836.jpg?w=1380&t=st=1663394260~exp=1663394860~hmac=42bf4909644fc9ccbef5584d467001aac76d6b261687c67d889758f35748f4e1"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="./img/3.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?w=1380&t=st=1663394328~exp=1663394928~hmac=3b8c8c2152c2715c270ecdbf35e48988c2173104adaa35a9cb99185019d967e4"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?w=1380&t=st=1663394328~exp=1663394928~hmac=3b8c8c2152c2715c270ecdbf35e48988c2173104adaa35a9cb99185019d967e4"
+            alt="">
+        </a>
+      </div>
+
+
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-outdoor-pools-spa-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18751.jpg?w=1380&t=st=1663395086~exp=1663395686~hmac=cfadb2827926a12579c75b2b094a472af3f76afba1406239e92220ad211dae74"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-outdoor-pools-spa-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18751.jpg?w=1380&t=st=1663395086~exp=1663395686~hmac=cfadb2827926a12579c75b2b094a472af3f76afba1406239e92220ad211dae74"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/light-garden-luxury-pool-nature_1203-4908.jpg?w=1380&t=st=1663395305~exp=1663395905~hmac=03394d8707e6468a85fa0dacfe437fe9129df859255f15d124d5f4422c84ee91"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/light-garden-luxury-pool-nature_1203-4908.jpg?w=1380&t=st=1663395305~exp=1663395905~hmac=03394d8707e6468a85fa0dacfe437fe9129df859255f15d124d5f4422c84ee91"
+            alt="">
+        </a>
+      </div>
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/cozy-studio-apartment-with-bedroom-living-space_1262-12323.jpg?w=1380&t=st=1663394919~exp=1663395519~hmac=7d231a338b7b4dc9b4430a631252ac0e097ca024da8276655619574e28ab24f8"
+            alt="">
+        </a>
+      </div>
+
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://www.freepik.com/free-photo/elegant-hotel-room-with-big-bed_968439.htm#query=hotel&position=21&from_view=search"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/elegant-hotel-room-with-big-bed_1203-1494.jpg?w=1380&t=st=1663394877~exp=1663395477~hmac=008b56e89607d1751b750e6ea9a778809716c0c8764122d0da3d324ef4ea1c25"
+            alt="">
+        </a>
+      </div>
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/cozy-studio-apartment-with-bedroom-living-space_1262-12323.jpg?w=1380&t=st=1663394919~exp=1663395519~hmac=7d231a338b7b4dc9b4430a631252ac0e097ca024da8276655619574e28ab24f8"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/young-asian-female-woman-stand-open-white-curtains-sheer-window-morning-after-waking-up-bedroom-hotel-woman-wake-up-with-fresh-open-curtains-windows_609648-2641.jpg?w=1380&t=st=1663394633~exp=1663395233~hmac=c53da0498c8accbcb5d523c91c8d9a7a6e4b301fee826647caa0365293f6cd27"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/young-asian-female-woman-stand-open-white-curtains-sheer-window-morning-after-waking-up-bedroom-hotel-woman-wake-up-with-fresh-open-curtains-windows_609648-2641.jpg?w=1380&t=st=1663394633~exp=1663395233~hmac=c53da0498c8accbcb5d523c91c8d9a7a6e4b301fee826647caa0365293f6cd27"
+            alt="">
+        </a>
+      </div>
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/cozy-studio-apartment-with-bedroom-living-space_1262-12323.jpg?w=1380&t=st=1663394919~exp=1663395519~hmac=7d231a338b7b4dc9b4430a631252ac0e097ca024da8276655619574e28ab24f8"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/light-garden-luxury-pool-nature_1203-4908.jpg?w=1380&t=st=1663395305~exp=1663395905~hmac=03394d8707e6468a85fa0dacfe437fe9129df859255f15d124d5f4422c84ee91"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/light-garden-luxury-pool-nature_1203-4908.jpg?w=1380&t=st=1663395305~exp=1663395905~hmac=03394d8707e6468a85fa0dacfe437fe9129df859255f15d124d5f4422c84ee91"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer_146671-18759.jpg?w=1380&t=st=1663395233~exp=1663395833~hmac=2ee0ac5b6617ceacad7f31b9541d78172778fd515d6ca064e162f591cd81fb85"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer_146671-18759.jpg?w=1380&t=st=1663395233~exp=1663395833~hmac=2ee0ac5b6617ceacad7f31b9541d78172778fd515d6ca064e162f591cd81fb85"
+            alt="">
+        </a>
+      </div>
+
+      <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/cozy-studio-apartment-with-bedroom-living-space_1262-12323.jpg?w=1380&t=st=1663394919~exp=1663395519~hmac=7d231a338b7b4dc9b4430a631252ac0e097ca024da8276655619574e28ab24f8"
+            alt="">
+        </a>
+      </div>
+
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer_146671-18759.jpg?w=1380&t=st=1663395233~exp=1663395833~hmac=2ee0ac5b6617ceacad7f31b9541d78172778fd515d6ca064e162f591cd81fb85"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer_146671-18759.jpg?w=1380&t=st=1663395233~exp=1663395833~hmac=2ee0ac5b6617ceacad7f31b9541d78172778fd515d6ca064e162f591cd81fb85"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer_146671-18759.jpg?w=1380&t=st=1663395233~exp=1663395833~hmac=2ee0ac5b6617ceacad7f31b9541d78172778fd515d6ca064e162f591cd81fb85"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer_146671-18759.jpg?w=1380&t=st=1663395233~exp=1663395833~hmac=2ee0ac5b6617ceacad7f31b9541d78172778fd515d6ca064e162f591cd81fb85"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-photo/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey_146671-18726.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
+            alt="">
+        </a>
+      </div>
+      <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+          class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid"
+            src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+            alt="">
+        </a>
       </div>
     </div>
   </div>
-  <div class="sub-footer container">
-    <div class=" text-dark p-5 d-flex flex-wrap container justify-content-between">
-      <!-- © 2020 Copyright: -->
-      <div class="footer-logo">
-        <img src="./img/logo.png" alt="...">
-      </div>
-      <div class="alpp">Hotel|PG|College|Restaurant|Mall|Indian|Help </div>
 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+  <script src="./gallery.js"></script>
+
+
+
+  <!-- buildinf anamitions -->
+  <div class="container py-5 text-center ">
+    <h3 class="py-3 listed-heading">Building Aminities</h3>
+
+    <div class=" py-5">
+      <div class="container ">
+        <div class=" row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-12 col-sm-3">
+            <div class="card beta-card pb-4">
+              <div class="w-100 circle-box ">
+                <div class="circle-100 circle-box-1 mt-4 mb-2">
+                  <img src="./img/car (2).png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title-2 text-center">Parking Space</h5>
+                <div class="w-100 d-flex justify-content-center">
+                  <div class="for-direction">
+                    <img src="./img/right-arrow.png" class="card-img-top icon-right-img" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="card beta-card pb-4">
+              <div class="w-100 circle-box ">
+                <div class="circle-100 circle-box-1 mt-4 mb-2">
+                  <img src="./img/swimming-pool.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title-2 text-center">Swimming Pool</h5>
+                <div class="w-100 d-flex justify-content-center">
+                  <div class="for-direction">
+                    <img src="./img/right-arrow.png" class="card-img-top icon-right-img" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="card beta-card pb-4">
+              <div class="w-100 circle-box ">
+                <div class="circle-100 circle-box-1 mt-4 mb-2">
+                  <img src="./img/private.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title-2 text-center">Private Security</h5>
+                <div class="w-100 d-flex justify-content-center">
+                  <div class="for-direction">
+                    <img src="./img/right-arrow.png" class="card-img-top icon-right-img" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="card beta-card pb-4">
+              <div class="w-100 circle-box ">
+                <div class="circle-100 circle-box-1 mt-4 mb-2">
+                  <img src="./img/heart-center.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title-2 text-center">Medical Center</h5>
+                <div class="w-100 d-flex justify-content-center">
+                  <div class="for-direction">
+                    <img src="./img/right-arrow.png" class="card-img-top icon-right-img" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- counting -->
+  <div class="container-fluid counting-box">
+    <div class="container ">
+      <div class="service-box w3-animate-bottom">
+        <div class="service-main-box">
+          <div class="col-sm-3 service-single">
+            <img class="heart-center" src="./img/car (2).png" alt="heart center-img">
+            <p class="counting-header"><span class="value-sign" id='0103'></span><span class="value-sign">+</span></p>
+            <p class="align-content-center sector-type">Total Area Sq</p>
+          </div>
+          <div class="col-sm-3 service-single">
+            <img class="heart-center" src="./img/armchair (1).png" alt="heart center-img">
+            <p class="counting-header"><span class="value-sign" id='0101'>200</span><span class="value-sign">+</span>
+            </p>
+            <p class="align-content-center sector-type">Total Area Sq</p>
+          </div>
+          <div class="col-sm-3 service-single">
+            <img class="heart-center" src="./img/car (2).png" alt="heart center-img">
+            <p class="counting-header"><span class="value-sign" id='0102'></span><span class="value-sign">+</span></p>
+            <p class="align-content-center sector-type">Total Area Sq</p>
+          </div>
+          <div class="col-sm-3 service-single">
+            <img class="heart-center" src="./img/car (2).png" alt="heart center-img">
+            <p class="counting-header"><span class="value-sign" id='0104'></span><span class="value-sign">K+</span></p>
+            <p class="align-content-center sector-type">Total Area Sq</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <script>
+    function animate(obj, initVal, lastVal, duration) {
+      let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime) => {
+
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+          startTime = currentTime;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+      };
+      //start animating
+      window.requestAnimationFrame(step);
+    }
+    let text1 = document.getElementById('0101');
+    let text2 = document.getElementById('0102');
+    let text3 = document.getElementById('0103');
+    let text4 = document.getElementById('0104');
+    const load = () => {
+      animate(text1, 0, 560, 1000);
+      animate(text2, 0, 268, 1000);
+      animate(text3, 0, 340, 1000);
+      animate(text4, 0, 197, 1000);
+    }
+  </script>
 
 
 
+  <!-- footer -->
+  <footer class="text-center text-lg-start text-muted ">
+    <!-- Section: Social media -->
+    <section class="dream-home">
+      <div class="dream-section-1">
+        <h1>Looking for a dream home?</h1>
+        <p>We can help you realize your dream of a new home</p>
+      </div>
+      <div>
+        <button class="btn button primary explore">Explore Property<img src="./img/right-arrow.png"
+            alt="right arrow"></button>
+      </div>
+    </section>
+    <!-- Section: Social media -->
 
+    <!-- Section: Links  -->
+    <section class="footer-section">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i><img src="./img/logo-2.png">
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fa fa-map-marker  me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fa fa-map-marker  me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fa fa-map-marker  me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fa fa-map-marker  me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
 
-
-
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025); color: #fff;">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
 
 </body>
